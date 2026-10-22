@@ -1,0 +1,26 @@
+# Gradle wrapper 保留，忽略构建产物
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+*.swo
+
+# Java/Kotlin
+*.class
+*.log
+hs_err_pid*
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# SPW 插件构建产物
+*.spmod

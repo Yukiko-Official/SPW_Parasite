@@ -1,0 +1,42 @@
+{
+  "configs": [
+    {
+      "title": "同步设置",
+      "config": "config.json",
+      "preferences": [
+        {
+          "type": "switch",
+          "key": "enabled",
+          "title": "启用插件",
+          "summary": "开启后，Salt Player 暂停时会同步第三方播放器状态到 Steam",
+          "default_value": true
+        },
+        {
+          "type": "seekbar",
+          "key": "poll.interval",
+          "title": "轮询间隔（秒）",
+          "summary": "多久检查一次第三方播放器状态",
+          "default_value": 3.0,
+          "min": 2.0,
+          "max": 10.0
+        },
+        {
+          "type": "seekbar",
+          "key": "none.threshold",
+          "title": "容错阈值",
+          "summary": "连续多少次检测不到第三方播放才清除 Steam 状态（防止偶发抖动）",
+          "default_value": 3.0,
+          "min": 1.0,
+          "max": 6.0
+        },
+        {
+          "type": "switch",
+          "key": "toast.enabled",
+          "title": "Toast 提示",
+          "summary": "检测到新歌曲时显示通知",
+          "default_value": true
+        }
+      ]
+    }
+  ]
+}
